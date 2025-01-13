@@ -24,6 +24,7 @@ const CourseGradeFooter = ({ intl, passingGrade }) => {
       gradeRange,
     },
   } = useModel('progress', courseId);
+  
 
   const wideScreen = useWindowSize().width >= breakpoints.medium.minWidth;
 
@@ -43,6 +44,7 @@ const CourseGradeFooter = ({ intl, passingGrade }) => {
         letterGrade,
         minGrade: minGradeRangeCutoff.toFixed(0),
         maxGrade: maxGradeRangeCutoff.toFixed(0),
+
       });
     } else {
       footerText = intl.formatMessage(messages.courseGradeFooterGenericPassing);

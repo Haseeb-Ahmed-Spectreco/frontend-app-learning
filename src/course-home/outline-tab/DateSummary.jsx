@@ -36,19 +36,7 @@ const DateSummary = ({
 
   return (
     <li className="p-0 mb-3 small text-dark-500">
-      <div className="row">
-        <FontAwesomeIcon icon={faCalendarAlt} className="ml-3 mt-1 mr-1" fixedWidth />
-        <div className="ml-1 font-weight-bold">
-          <FormattedDate
-            value={dateBlock.date}
-            day="numeric"
-            month="short"
-            weekday="short"
-            year="numeric"
-            {...timezoneFormatArgs}
-          />
-        </div>
-      </div>
+      
       <div className="row ml-4 pr-2">
         <div className="date-summary-text">
           {linkedTitle && (
@@ -72,6 +60,19 @@ const DateSummary = ({
             {dateBlock.linkText}
           </a>
         )}
+        <div className="row" >
+        <FontAwesomeIcon icon={faCalendarAlt} className="ml-3 mt-1 mr-1" color='#bc1823' fixedWidth />
+        <div className="ml-1" style={{color: "#bc1823"}}>
+          <FormattedDate
+            value={dateBlock.date}
+            day="numeric"
+            month="short"
+            weekday="short"
+            year="numeric"
+            {...timezoneFormatArgs}
+          />
+        </div>
+      </div>
       </div>
     </li>
   );

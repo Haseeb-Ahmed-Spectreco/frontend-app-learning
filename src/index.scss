@@ -65,6 +65,16 @@
   position: static;
 }
 
+.card {
+  border: 1px solid #bc1823; /* Adds a red border */
+  border-radius: 5px; /* Smooth corners */
+  max-width: 85%; /* Limits the card width */
+  padding: 10px; /* Space inside the card */
+  background-color: #fff; /* Background color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a light shadow */
+  transition: box-shadow 0.3s ease-in-out; /* Smooth hover effect */
+}
+
 .sequence-container {
   display: flex;
   flex-direction: column;

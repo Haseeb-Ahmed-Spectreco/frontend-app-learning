@@ -28,7 +28,7 @@ const CourseDates = ({
   }
 
   return (
-    <section className="mb-4">
+    <section className="mb-4 card">
       <div id="courseHome-dates">
         <h2 className="h4">{intl.formatMessage(messages.dates)}</h2>
         <ol className="list-unstyled">

@@ -40,7 +40,8 @@ const slice = createSlice({
       models.forEach(model => add(state, modelType, model, idField));
     },
     addModelsMap: (state, { payload }) => {
-      const { modelType, modelsMap, idField } = payload;
+      const { modelType, modelsMap, idField }
+       = payload;
       Object.values(modelsMap).forEach(model => add(state, modelType, model, idField));
     },
     updateModel: (state, { payload }) => {
